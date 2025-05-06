@@ -82,28 +82,6 @@ mediaListas = (L1 + L2 + L3 + L4 + L5 + L6) / 6 * 2;
 mediaProvas = (P1 + P2) / 2 * 8;
 mediaFinal = (mediaListas + mediaProvas) / 100;
 
-Console.WriteLine("Informe a nota da Lista 1: ");
-L1 = Convert.ToDouble(Console.ReadLine());
-
-Console.WriteLine("Informe a nota da Lista 2: ");
-L2 = Convert.ToDouble(Console.ReadLine());
-
-Console.WriteLine("Informe a nota da Lista 3: ");
-L3 = Convert.ToDouble(Console.ReadLine());
-
-Console.WriteLine("Informe a nota da Lista 4: ");
-L4 = Convert.ToDouble(Console.ReadLine());
-
-Console.WriteLine("Informe a nota da Lista 5: ");
-L5 = Convert.ToDouble(Console.ReadLine());
-
-Console.WriteLine("Informe a nota da Lista 6: ");
-L6 = Convert.ToDouble(Console.ReadLine());
-
-mediaListas = (L1 + L2 + L3 + L4 + L5 + L6) / 6 * 0.2;
-mediaProvas = (P1 + P2) / 2 * 0.8;
-mediaFinal = mediaListas + mediaProvas;
-
 //Console.WriteLine($"Média: {media:N1}");
 
 bool aprovado = mediaFinal >= mediaAprovacao;
