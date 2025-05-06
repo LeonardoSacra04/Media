@@ -1,5 +1,5 @@
 ﻿double P1, P2, P3, L1, L2, L3, L4, L5, L6, mediaFinal, mediaListas, mediaProvas;
-const double mediaAprovacao = 6;
+const double mediaAprovacao = 6.0;
 
 Console.Clear();
 
@@ -58,6 +58,8 @@ if (L6 < 0 || L6 > 10)
     return;
 }
 
+Console.Clear();
+
 Console.WriteLine("Informe a nota da P1: ");
 P1 = Convert.ToDouble(Console.ReadLine());
 
@@ -76,9 +78,31 @@ if (P1 < 0 || P1 > 10 || P2 < 0 || P2 > 10)
     return;
 }
 
-mediaListas = ((L1 + L2 + L3 + L4 + L5 + L6) / 6) * 2;
-mediaProvas = ((P1 + P2) / 2) * 8;
+mediaListas = (L1 + L2 + L3 + L4 + L5 + L6) / 6 * 2;
+mediaProvas = (P1 + P2) / 2 * 8;
 mediaFinal = (mediaListas + mediaProvas) / 100;
+
+Console.WriteLine("Informe a nota da Lista 1: ");
+L1 = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Informe a nota da Lista 2: ");
+L2 = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Informe a nota da Lista 3: ");
+L3 = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Informe a nota da Lista 4: ");
+L4 = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Informe a nota da Lista 5: ");
+L5 = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Informe a nota da Lista 6: ");
+L6 = Convert.ToDouble(Console.ReadLine());
+
+mediaListas = (L1 + L2 + L3 + L4 + L5 + L6) / 6 * 0.2;
+mediaProvas = (P1 + P2) / 2 * 0.8;
+mediaFinal = mediaListas + mediaProvas;
 
 //Console.WriteLine($"Média: {media:N1}");
 
